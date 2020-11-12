@@ -30,6 +30,8 @@ namespace PruebaTecnicaSolicitudesPermisos
         {
             services.AddDbContext<PermisosDBContext>();
 
+            services.AddCors();
+
             services.AddControllers();
 
             services.Configure<IISServerOptions>(options =>
@@ -53,8 +55,15 @@ namespace PruebaTecnicaSolicitudesPermisos
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(x => x
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .SetIsOriginAllowed(origin => true)
+            .AllowCredentials());
+
             app.UseHttpsRedirection();
             app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

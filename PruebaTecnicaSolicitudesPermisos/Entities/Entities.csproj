@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="DTO\" />
+    <Folder Include="DTO\TypePermission\" />
+    <Folder Include="DTO\Permits\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />

@@ -7,6 +7,8 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Middleware\" />
+    <Folder Include="Controllers\TypePermission\" />
+    <Folder Include="Controllers\Permits\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
