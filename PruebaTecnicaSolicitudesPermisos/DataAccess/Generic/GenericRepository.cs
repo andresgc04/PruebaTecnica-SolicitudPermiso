@@ -80,7 +80,7 @@ namespace DataAccess.Generic
             {
                 _unitOfWork.Context.Entry(entity).State = EntityState.Modified;
                 await Task.CompletedTask;
-                return true; 
+                return true;
             }
             catch (Exception)
             {

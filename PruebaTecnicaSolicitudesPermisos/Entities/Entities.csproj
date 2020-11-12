@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201112042356_Relaciones.cs" />
+    <Compile Remove="Migrations\20201112042356_Relaciones.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
